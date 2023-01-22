@@ -1,0 +1,403 @@
+import { FaFacebookSquare,FaInstagramSquare,FaYoutubeSquare } from "react-icons/fa";
+
+{ /* 3rd social media */}
+             {/*<div className="social-media">
+             <ul className="social-media-desktop">
+                <li>
+                    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!--=============== BOXICONS ===============-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+
+  <!-- ===================UNICONS==================== -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  
+  <!-- =====================Typed JS========================= -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  
+                  <a href="https://www.instagram.com/invites/contact/?i=179evc33wft5e&utm_content=kr3xf9j"
+                      target="_sakshi">
+                   <FaFacebookSquare/>
+                   </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/invites/contact/?i=179evc33wft5e&utm_content=kr3xf9j"
+                      target="_sakshi">
+                    <FaInstagramSquare/>
+                    </a>
+                </li>
+                <li>
+                   <a href="https://www.instagram.com/invites/contact/?i=179evc33wft5e&utm_content=kr3xf9j"
+                      target="_sakshi">
+                    <FaYoutubeSquare/>
+                    </a>
+                </li>
+             </ul>
+
+    </div>*/}
+
+
+  <nav className='main-nav'>
+             <div className='logo'>
+             <img src={img} alt=""/>
+              <h2><span>T</span>ravel</h2>           
+             </div>
+             <div className='menu-link'>
+             <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Destination</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact us</a>
+                </li>
+            
+                <li>
+                   <a href='#'>Login</a>
+                </li>
+             </ul>
+
+             </div>
+             { /* 3rd social media */}
+             <div className="social-media">
+             <ul className="social-media-desktop">
+                <li>
+                    <a href="https://www.instagram.com/invites/contact/?i=179evc33wft5e&utm_content=kr3xf9j">
+                     <FaFacebookSquare className= "facebook"/>
+                   </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/invites/contact/?i=179evc33wft5e&utm_content=kr3xf9j">
+                     <FaInstagramSquare className= "instagram"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/invites/contact/?i=179evc33wft5e&utm_content=kr3xf9j" >
+                     <FaYoutubeSquare className= "youtube"/>
+                    </a>
+                </li>
+             </ul>
+             </div>
+         </nav>
+        </div>
+
+
+
+
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.main{
+  width:100%;
+  height: 100vh;
+}
+.video{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+.content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+  align-items: center;
+  color: darkslategrey;
+}
+
+
+
+
+
+     {/*<div className='main'>*/}
+      {/* <video src={videobg} autoPlay loop muted/> */}
+      {/* <div className='content'>
+        <h1>Welcome to World</h1>
+      </div> */}
+  {/*import videobg from "./assets/videobg.mp4";*/}
+  
+  
+  
+  
+  
+  }
+.main-nav{
+    width: 100%;
+    height: 7rem;
+    display:grid;
+    grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+    background: -webkit-linear-gradient(rgba(10, 0, 0, 0.733),rgba(112, 12, 244, 0.007));
+    -webkit-background-clip:transparent;
+    box-shadow: rgba(50,50,93,0.25) 0px 50px 100px -20px,
+    rgba(0,0,0,0.3) 0px 30px 60px -30px;
+}   
+.logo h2{
+    grid-column: 2/2;
+    position: relative;
+    font-size: 2rem;
+    margin-right:200px;
+    margin-bottom:50px;
+    font-weight:400;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(rgba(10, 0, 0, 0.733),rgba(112, 12, 244, 0.007));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+{/*}.logo img{
+    mix-blend-mode: multiply;
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-left:50px;
+    margin-bottom: 50px;
+    
+}*/}
+.logo h2 span {
+    font-size: 3.8rem;
+}
+
+.logo {
+    display: grid;
+    justify-content: start;
+    align-items: center;
+}
+.menu-link ul li {
+    font-size: 1.3rem;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:10px;
+
+}
+.menu-link ul li a {
+    text-transform: capitalize;
+    color: rgba(0,0,3,0.8);
+    transition: 0.5s;
+}
+.menu-link ul li:hover > a {
+    transform-origin:left;
+    color: rgba(0,0,3,1);
+    text-decoration:none;
+    transition:0.5s
+}
+.menu-link {
+    grid-column:3/4;
+}
+
+.menu-link ul {
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*icons of social mwdia*/
+.social-media{
+    grid-column:4/5;
+}
+.social-media ul{
+    height: 10rem;
+    display:grid;
+    grid-template-columns: 3fr repeat(3,1fr);
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+.social-media.ul.li:first-child {
+    grid-column: 2/3;
+}
+.social-media ul li{
+    text-align: right;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+#new css
+
+ .logo{
+        color: var(--blackColor);
+        font-weight: 600;
+        cursor: pointer;
+        align-items: center;
+        justify-content:center;
+
+        .icon{
+            font-size: 25px;
+            color: var(--PrimaryColor);
+            transform: translateY(5px);
+        }
+
+    }
+    @media screen and (max-width: 768px) {
+        .navBar{
+            position: absolute;
+            background: var(--whiteColorDream);
+            height: max-content;
+            width: 80%;
+            border-radius: 1rem;
+            top: 6rem;
+            left: 50%;
+            padding: 1 rem;
+            transform: translate(-50%);
+            z-index: 2000;
+            box-shadow: 0 2px 4px rgba(2,15,29,0.904);
+            transition: .3s ease-in-out;
+            
+            .navLists{
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                margin: auto;
+                padding: .5rem 0;
+                
+                
+                .navItem{
+                    padding: .5rem 0;
+                    
+                    .navLink{
+                        color: var(--textColor);
+                        font-size: 9rem;
+                        font-weight: 600;
+                        &:hover{
+                            color:var(--PrimaryColor);
+                        }
+                    }
+                }
+            .btn{
+                margin-top: 1rem;
+
+                a{
+                    font-weight:600;
+                    color: var(--whiteColor);
+                }
+            } 
+        }
+        .closeNavbar{
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            color: var(--PrimaryColor);
+            &:hover{
+                color: var(--SecondaryColor);
+            }
+
+        }
+
+    
+        }
+        
+    }
+    .toggleNavbar{
+        .icon{
+            font-size: 25px;
+            color: var(--PrimaryColor);
+        }
+        &:hover.icon{
+            color: var(--SecondaryColor);
+
+
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    .logo{
+    color: var(--blackColor);
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+    justify-content:center;
+}
+.icon{
+    font-size: 25px;
+    color: var(--PrimaryColor);
+    transform: translateY(5px);
+} 
+@media screen and (max-width: 768px) {
+    .navBar{
+        position: absolute;
+        background: var(--whiteColorDream);
+        height: max-content;
+        width: 80%;
+        border-radius: 1rem;
+        top: 6rem;
+        left: 50%;
+        padding: 1 rem;
+        transform: translate(-50%);
+        z-index: 2000;
+        box-shadow: 0 2px 4px rgba(2,15,29,0.904);
+        transition: .3s ease-in-out;
+    }    
+    .navLists{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        padding: .5rem 0;
+    }
+    .navItem{
+        padding: .5rem 0;
+    }
+    .navLink{
+        color: var(--textColor);
+        font-size: 9rem;
+        font-weight: 600;
+    }
+    .navlink:hover{
+        color:var(--PrimaryColor);
+    }
+    .btn{
+         margin-top: 1rem;
+    }
+    .btn a{
+        font-weight:600;
+        color: var(--whiteColor);
+    }
+} 
+.closeNavbar{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: var(--PrimaryColor);
+}
+.closeNavbar:hover{
+    color: var(--SecondaryColor);
+}
+    
+.toggleNavbar.icon{
+    font-size: 25px;
+    color: var(--PrimaryColor);
+}
+.toggleNavbar:hover.icon{
+    color: var(--SecondaryColor);
+}
+
+
+
+
