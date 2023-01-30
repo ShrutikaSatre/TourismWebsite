@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import {NavLink} from "react-router-dom";
 import "./navbar.css";
 import {MdTravelExplore} from "react-icons/md";
 import {AiFillCloseCircle} from "react-icons/ai";
@@ -13,7 +14,7 @@ const Navbar = () => {
         setActive('navBar');
     }
         return(
-            <section className='navBarSection'>-
+            <section className='navBarSection'>
                 <header className="header flex">
                         <div className="logoDiv">
                             <a href="#" className="logo">
@@ -24,23 +25,23 @@ const Navbar = () => {
                         <div className={active}>
                             <ul className='navLists flex'>
                                 <li className='navItem'>
-                                    <a href='#' className='navLink'>Home</a>
+                                   <a href='home' className='navLink'>Home</a>
                                 </li>
                              
                                 <li className='navItem'>
-                                  <a href='#' className='navLink'>Packages</a>
+                                   <a href='main' className='navLink'>Packages</a>
                                 </li>
                              
                                 <li className='navItem'>
-                                 <a href='#' className='navLink'>Hotels</a>
+                                   <a href='hotels' className='navLink'>Hotels</a>
                                 </li>
                              
                                 <li className='navItem'>
-                                   <a href='#' className='navLink'>About</a>
+                                   <a href='footer' className='navLink'>About</a>
                                 </li>
                              
                                 <li className='navItem'>
-                                  <a href='#' className='navLink'>Contact</a>
+                                  <a href='contact' className='navLink'>Contact</a>
                                 </li>
                                 <button className='btn'>
                                     <a href='#'>BOOK NOW</a>
