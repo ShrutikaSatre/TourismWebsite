@@ -56,7 +56,7 @@ const Home = () => {
                 <div className="priceInput">
                   <div className="label_total flex">
                     <label htmlFor="price">Max price:</label>
-                    <h3 className="total">INR 1,00,000</h3>
+                    <h3 className="total">₹ 1,00,000</h3>
                   </div>
                  <div className="input flex">
                   <input type="range" max="100000" min="50000"/>

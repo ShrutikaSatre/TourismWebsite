@@ -1,5 +1,4 @@
 import React,{useState} from 'react';
-import {NavLink} from "react-router-dom";
 import "./navbar.css";
 import {MdTravelExplore} from "react-icons/md";
 import {AiFillCloseCircle} from "react-icons/ai";
@@ -44,7 +43,7 @@ const Navbar = () => {
                                   <a href='contact' className='navLink'>Contact</a>
                                 </li>
                                 <button className='btn'>
-                                    <a href='#'>BOOK NOW</a>
+                                    <a href='login'>LOGIN</a>
                                 </button>
                             </ul>
                             <div onClick={removeNavbar} className='closeNavbar'>

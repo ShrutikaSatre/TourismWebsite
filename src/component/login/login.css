@@ -1,0 +1,139 @@
+:root {
+  --PrimaryColor:hsl(199, 100%, 33%);
+  --SecondaryColor:hsl(187,85%,43%);
+  --gradientColor:linear-gradient(to right,hsl(187,85%,43%),hsl(199,100%,33%));
+  --whiteColor:hsl(0,0%,100%);
+  --blackColor:hsl(201,33%,16%);
+  --textColor:hsl(240,4%,36%);
+  --whiteColorDream:hsl(0,0%,93%);
+  --greyText:rgb(190,190,190);
+  --inputColor:rgb(239,239,239);
+  --bodyColor:rgb(240,240,240);
+  --cardBG:rgb(225,225,235);
+}
+
+.lmain {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 90px;
+  background-color: #e1e3eb;
+}
+.lmain .sub-main {
+  display: flex;
+  justify-content: center;
+  height: 525px;
+  width: 35%;
+  box-shadow: 11px 12px 13px 12px rgb(207, 207, 207);
+  padding-top: 60px;
+  border-radius: 60px;
+  background-color: var(--cardBG);
+}
+.lmain .sub-main .imgs {
+  padding-top: 10px;
+  justify-content: center;
+  display: flex;
+}
+.lmain .sub-main .imgs .container-image {
+  border-radius: 150px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 115px;
+  width: 115px;
+}
+.lmain .sub-main .imgs .container-image .profile {
+  height: 100px;
+  width: 100px;
+  border-radius: 130px;
+}
+.lmain .sub-main h2 {
+  color: var(--PrimaryColor);
+}
+.lmain .sub-main .fisrt-input {
+  padding-top: 1rem;
+}
+.lmain .sub-main .fisrt-input .icon {
+  height: 30px;
+  width: 50px;
+  font-size: 25px;
+  position: absolute;
+  padding: 14px 0 0 25px;
+}
+.lmain .sub-main .fisrt-input .name-input {
+  width: 300px;
+  height: 40px;
+  border-radius: 60px;
+  border: none;
+  outline: none;
+  border: 1px solid var(--blackColor);
+  outline: none;
+  background: transparent;
+  color: var(--blackColor);
+  padding-left: 70px;
+  font-size: 20px;
+}
+.lmain .sub-main .fisrt-input .name-input::-moz-placeholder {
+  color: var(--blackColor);
+  opacity: 0.5;
+}
+.lmain .sub-main .fisrt-input .name-input:-ms-input-placeholder {
+  color: var(--blackColor);
+  opacity: 0.5;
+}
+.lmain .sub-main .fisrt-input .name-input::placeholder {
+  color: var(--blackColor);
+  opacity: 0.5;
+}
+.lmain .sub-main .second-input {
+  padding-top: 20px;
+}
+.lmain .sub-main .second-input .icon {
+  height: 30px;
+  width: 50px;
+  font-size: 25px;
+  position: absolute;
+  padding: 14px 0 0 25px;
+}
+.lmain .sub-main .second-input .name-input {
+  width: 300px;
+  height: 40px;
+  border-radius: 60px;
+  border: none;
+  outline: none;
+  border: 1px solid var(--blackColor);
+  outline: none;
+  background: transparent;
+  color: var(--blackColor);
+  padding-left: 70px;
+  font-size: 20px;
+}
+.lmain .sub-main .second-input .name-input::-moz-placeholder {
+  color: var(--blackColor);
+  opacity: 0.5;
+}
+.lmain .sub-main .second-input .name-input:-ms-input-placeholder {
+  color: var(--blackColor);
+  opacity: 0.5;
+}
+.lmain .sub-main .second-input .name-input::placeholder {
+  color: var(--blackColor);
+  opacity: 0.5;
+}
+.lmain .sub-main .login-button {
+  padding-top: 25px;
+}
+.lmain .sub-main .login-button .btn {
+  font-size: 20px;
+}
+.lmain .sub-main .link {
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  justify-content: center;
+}
+.lmain .sub-main .link .alogin {
+  color: var(--blackColor);
+  text-decoration: underline;
+}/*# sourceMappingURL=login.css.map */

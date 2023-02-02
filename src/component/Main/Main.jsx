@@ -7,6 +7,8 @@ import img4 from "../../assets/Goa.jpg";
 import img5 from "../../assets/ladakh.jpg";
 import img6 from "../../assets/ooty.jpg";
 import img7 from "../../assets/udaipur.jpg";
+import img8 from "../../assets/hampi.jpg";
+import img9 from "../../assets/meghalaya.jpg";
 import {HiOutlineLocationMarker} from "react-icons/hi"
 import {HiOutlineClipboardCheck} from "react-icons/hi"
 import Aos from "aos";
@@ -22,7 +24,7 @@ const Data = [
     destTitle:'Kerala',
     location:'Kerala',
     grade:'CULTURAL RELAX',
-    fees:'INR 80,000',
+    fees:'₹80,000',
     description:'Kerala is a popular destination for both domestic as well as foreign tourists. Kerala is well known for its beaches, backwaters in Alappuzha and Kollam, mountain ranges and wildlife sanctuaries.'
    },
    {
@@ -31,7 +33,7 @@ const Data = [
     destTitle:'Manali',
     location:'Himachal Pradesh',
     grade:'CULTURAL RELAX',
-    fees:'INR 60,000',
+    fees:'₹60,000',
     description:'It is a rustic enclave known for its cool climate and snow-capped mountains, offering respite to tourists escaping scorching heat of the plains. The tourism industry in Manali started booming only in the early 20th century, mainly because of its natural bounties and salubrious climate'
  },
  {
@@ -40,7 +42,7 @@ const Data = [
     destTitle:'Mahabaleshwar',
     location:'Maharashtra',
     grade:'CULTURAL RELAX',
-    fees:'INR 50,000',
+    fees:'₹50,000',
     description:'Mahabaleshwar region is the source of the Krishna River that flows across Maharashtra, Karnataka, Telangana and Andhra Pradesh. The legendary source of the river is a spout from the mouth of a statue of a cow in the ancient temple of Mahadev in Old Mahabaleshwar.'
  },
  {
@@ -49,7 +51,7 @@ const Data = [
     destTitle:'Goa',
     location:'Goa',
     grade:'CULTURAL RELAX',
-    fees:'INR 90,000',
+    fees:'₹90,000',
     description:'Goa is one of the most favorite destination among Indian tourists due to its pristine beaches. Dotted with hundreds of impressive beaches in Goa, the incredible coastline of more than 100 km offers beautiful views and serenity where tourists enjoy and relax in the Sun.'
  },
  {
@@ -58,7 +60,7 @@ const Data = [
     destTitle:'Ladakh',
     location:'Jammu Kashmir',
     grade:'CULTURAL RELAX',
-    fees:'INR 70,000',
+    fees:' ₹70,000',
     description:'Ladakh is most famous for breathtaking landscapes, the crystal clear skies, the highest mountain passes, thrilling adventure activities, Buddhist Monasteries and festivals.'
  },
  {
@@ -67,7 +69,7 @@ const Data = [
    destTitle:'Ooty',
    location:'Tamil nadu',
    grade:'CULTURAL RELAX',
-   fees:'INR 90,000',
+   fees:'₹40,000',
    description:'Ooty is most famous for its tea plantations. Connoisseurs will find plenty to choose from: dust and leaf; black, green, black and white varieties; and flavours such as masala, jasmine, cardamom and even chocolate.'
 },
 {
@@ -76,9 +78,29 @@ const Data = [
    destTitle:'Udaipur',
    location:'Rajasthan',
    grade:'CULTURAL RELAX',
-   fees:'INR 90,000',
+   fees:'₹90,000',
    description:'Often referred to as the Venice of the East, the city of lakes Udaipur is located around azure water lakes and is hemmed in by lush green hills of Aravallis. The famous Lake Palace, located in the middle of Lake Pichola is one of the most beautiful sights of Udaipur.'
 },
+{
+   id:8,
+   img:img8,
+   destTitle:'Hampi',
+   location:'Karnataka',
+   grade:'CULTURAL RELAX',
+   fees:'₹60,000',
+   description:'Hampi is a UNESCO World Heritage Site, owing to the ancient temples, forts and other monuments here. Hampi was the capital of the Vijayanagar Empire around 1500 AD, and by some accounts, the second largest city in the world at that time.'
+},
+{
+   id:9,
+   img:img9,
+   destTitle:'Meghalaya',
+   location:'Aasam',
+   grade:'CULTURAL RELAX',
+   fees:'₹60,000',
+   description:'There are numerous Meghalaya tourist places that are well-known all over the world as it boasts some of the most spectacular waterfalls like Nohkalikai Falls, Elephant Falls, and Mawlynnong Falls; the longest caves like Krem Liat Prah and Mawsmai Caves; and the wettest places in the world like Cherrapunji and Mawsynram ..'
+},
+
+
 
 
 ]
@@ -98,7 +120,7 @@ const Main = () => {
                    return(
                      <div key={id} data-aos="fade-up"
                        className="singleDestination">
-                      <div className="imageDiv">
+                      <div className="imageDiv flex">
                          <img src={img} alt={destTitle}/>
                      </div>
                      <div className="cardInfo">
@@ -111,7 +133,7 @@ const Main = () => {
                             <div className="grade">
                                 <span>{grade}<small>+1</small></span>
                             </div>
-                            <div className="price">
+                            <div className="price flex">
                                 <h5>{fees}</h5>
                             </div>
                          </div>
@@ -119,7 +141,7 @@ const Main = () => {
                             <p>{description}</p>
                          </div>
                          <button className="btn flex">
-                            DETAILS<HiOutlineClipboardCheck className="icon"/>
+                            BOOK NOW<HiOutlineClipboardCheck className="icon"/>
                          </button>
                      </div>
 

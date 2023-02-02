@@ -114,7 +114,7 @@
   font-size: 10px;
 }
 .main .secContent .singleDestination .cardInfo .fees .price {
-  font-size: 2rem;
+  font-size: 1rem;
   color: var(--blackColor);
 }
 .main .secContent .singleDestination .cardInfo .desc {
@@ -131,4 +131,27 @@
 .main .secContent .singleDestination .cardInfo .btn .icon {
   align-self: center;
   font-size: 18px;
+}
+
+@media screen and (min-width: 500px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .title::after {
+    width: 155px !important;
+  }
+  .secContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .secContent .singleDestination {
+    height: auto;
+  }
+}
+@media screen and (min-width: 840px) {
+  .secContent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .secContent .singleDestination {
+    height: auto;
+  }
 }/*# sourceMappingURL=main.css.map */
